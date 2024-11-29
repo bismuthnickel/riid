@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+sudo rm -f ./riid > /dev/null
+sudo rm -f /usr/local/bin/riid > /dev/null
+gcc ./main.c -o ./riid
+sudo mv ./riid /usr/local/bin/riid > /dev/null
+sudo rm -f ./riid > /dev/null
